@@ -25,6 +25,7 @@ public class Reto3 {
         int puntaje;
         int[] valores = new int[3];
         int temp;
+        int mayor;
         
         Constructor personaje1 = new Constructor();
         Mago personaje2 = new Mago();
@@ -49,7 +50,7 @@ public class Reto3 {
         {
             for(int j = 0; j < valores.length - 1; j++)
             {
-                if (valores[j] < valores[j + 1])
+                if (valores[j] > valores[j + 1])
                 {
                     int tmp = valores[j+1];
                     valores[j+1] = valores[j];
@@ -60,8 +61,18 @@ public class Reto3 {
             }
         
         for(int y = 0; y < valores.length; y++){
-            System.out.println(valores[y]);
+            //System.out.println(valores[y]);
+            if(personaje1.getPuntaje() == valores[y]){
+                System.out.println(personaje1.getNombre_personaje());
+            }else if(personaje2.getPuntaje() == valores[y]){
+                System.out.println(personaje2.getNombre_personaje());
+            }else{
+                System.out.println(personaje3.getNombre_personaje());
+
+            }
         }
+        
+        mayor = valores[2];
         
     }
     

@@ -11,6 +11,8 @@ package reto.pkg3;
  */
 public class Mago {
    private int puntaje;
+      private String nombre_personaje = "Mago"; 
+
 
     public Mago(int puntaje) {
         this.puntaje = puntaje;
@@ -26,6 +28,13 @@ public class Mago {
     public void setPuntaje(int puntaje) {
         this.puntaje = puntaje;
     }
-   
+
+    public String getNombre_personaje() {
+        return nombre_personaje;
+    }
+
+    public void setNombre_personaje(String nombre_personaje) {
+        this.nombre_personaje = nombre_personaje;
+    }
    
 }
